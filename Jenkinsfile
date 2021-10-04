@@ -18,7 +18,7 @@ pipeline {
 		
         stage('Restore packages') {
 			steps {
-				sh "dotnet restore \"C:\\Muhammad Bashir\\Projects\\Jenkins\\dotnet-cicd\\CICD Test.sln\""
+				sh "dotnetRestore \"C:\\Muhammad Bashir\\Projects\\Jenkins\\dotnet-cicd\\CICD Test.sln\""
 			}
 		}
 				
