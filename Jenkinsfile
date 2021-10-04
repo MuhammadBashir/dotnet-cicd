@@ -18,7 +18,7 @@ pipeline {
 		
         stage('Restore packages') {
 			steps {
-				bat "dotnet restore ${workspace}\\CICD Test.sln"
+				bat "dotnet restore C:\\Muhammad Bashir\\Projects\\Jenkins\\dotnet-cicd\\CICD Test.sln"
 			}
 		}
 				
