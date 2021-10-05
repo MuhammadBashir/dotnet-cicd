@@ -36,7 +36,7 @@ pipeline {
 		
 		stage('Zip') {
 			steps {
-				bat "tar.exe -a -c -f \"C:\\Muhammad Bashir\\Projects\\Published Sites\\CICD Web.zip\" -C \"C:\\Muhammad Bashir\\Projects\\Jenkins\\dotnet-cicd\\CICD Test\\bin\\Release\\netcoreapp3.1\\publish" *.*"
+				bat "tar.exe -a -c -f \"C:\\Muhammad Bashir\\Projects\\Published Sites\\CICD Web.zip\" -C \"C:\\Muhammad Bashir\\Projects\\Jenkins\\dotnet-cicd\\CICD Test\\bin\\Release\\netcoreapp3.1\\publish\" *.*"
 			}
 		}
 		
