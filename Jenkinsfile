@@ -30,7 +30,7 @@ pipeline {
 		
 		stage('Publish') {
 			steps {
-				bat "dotnet publish \"C:\\Muhammad Bashir\\Projects\\Jenkins\\dotnet-cicd\\CICD Test.sln\" --configuration"
+				bat "dotnet publish \"C:\\Muhammad Bashir\\Projects\\Jenkins\\dotnet-cicd\\CICD Test.sln\" --configuration Release"
 			}
 		}
 		
