@@ -42,7 +42,7 @@ pipeline {
 		
 		stage('Deploy') {
 			steps {
-				bat " \"C:\\Program Files (x86)\\IIS\\Microsoft Web Deploy V3\\msdeploy.exe\" -source:package=\"C:\\Muhammad Bashir\\Projects\\Published Sites\\CICD Web.zip\" -dest:contentPath='CICD' -verb:sync -allowUntrusted"
+				bat " \"C:\\Program Files (x86)\\IIS\\Microsoft Web Deploy V3\\msdeploy.exe\" -source:package=\"C:\\Muhammad Bashir\\Projects\\Published Sites\\CICD Web.zip\" -dest:contentPath='CICD' -verb:sync -allowUntrusted -enableRule:AppOffline"
 			}
 		}
 				
